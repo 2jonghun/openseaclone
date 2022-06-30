@@ -1,0 +1,2 @@
+# opensea clone
+just navbar

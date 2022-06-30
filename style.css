@@ -14,6 +14,8 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  height: 72px;
+  width: 100%;
   background-color: white;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -25,16 +27,62 @@ a {
 
 .navbar__logo img {
   width: 40px;
+  cursor: pointer;
 }
 
 .navbar__logo svg {
   margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar__input-box {
+  display: none;
+}
+
+.navbar__input-small {
+  display: flex;
+  align-items: center;
+}
+
+.angle-btn {
+  border: 0;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar__input-small-angle {
+  padding: 8px 25px;
+}
+
+.search-input2 {
+  font-size: 17px;
+  width: 470px;
+  height: 30px;
+  border: none;
+}
+
+.search-input2:focus {
+  outline: none;
+}
+
+.navbar__input-real {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__search-xbutton2 {
+  border: 0;
+  background-color: white;
+  padding: 8px 15px;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
 }
 
 .navbar__input-box1 {
-  width: 500px;
+  width: 40%;
   height: 45px;
-  margin-left: 15px;
   border: 2px;
   border-radius: 10px;
   border-style: solid;
@@ -82,11 +130,15 @@ a {
   display: none;
 }
 
-.navbar__search-button-box {
+.navbar__search-icon-box2-button i:hover {
+  color: black;
+}
+
+.navbar__search-xbutton-box {
   padding: 0 8px;
 }
 
-.navbar__search-button {
+.navbar__search-xbutton {
   display: none;
   border: 0;
   background-color: white;
@@ -123,6 +175,10 @@ a {
   color: rgba(121, 121, 121, 0.8);
 }
 
+.navbar__toogleBtn i:hover {
+  color: black;
+}
+
 @media screen and (max-width: 1200px) {
   .navbar__input-box1 {
     width: 100%;
@@ -157,14 +213,18 @@ a {
   }
 }
 
-@media screen and (max-width: 616px) {
+@media screen and (max-width: 600px) {
   .navbar__input-box1 {
     display: none;
   }
-}
 
-@media screen and (max-width: 600px) {
   .navbar__search-icon-box2-button {
     display: block;
   }
+}
+
+@media screen and (min-width: 600px) {
+  /* .navbar__input-box {
+    display: none;
+  } */
 }
